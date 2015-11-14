@@ -1,1 +1,20 @@
-body { padding-top:30px; }
+/**** INDEX.HTML ******/
+body{
+	width:100%;
+}
+
+#header{
+	background-color: #007dc6;
+	border: none;
+}
+
+#logo{
+	font-family: myriad-pro,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size:20px;
+	font-weight: 600;
+	color:white;
+	letter-spacing: 0.7px;
+	line-height: 55px;
+    height: 55px;
+    padding-top: 0;
+}
