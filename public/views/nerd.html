@@ -1,5 +1,26 @@
-<div class="jumbotron text-center">
-	<h1>Nerds and Proud</h1>
+<div id="combinations" class="container">
+	<h2 class="clabel">Budget: {{1000 | currency : symbol : fractionSize}}</h2>
+	<hr/>
+	<h2 class="clabel">Items on cart: </h2>
+	<ol class="breadcrumb">
+		<li class="itemList" ng-repeat="item in myItems">{{item}}</li>
+	</ol>
 
-	<p>{{ tagline }}</p>
+	<div class="resultList vertical" ng-repeat="combo in combos">
+		<div class="row combo">
+			<div class="col-md-1 number">
+				<span>
+					{{$index + 1}}
+				</span>
+			</div>
+			<div class="col-md-9 .col-md-offset-1">
+				<div class="individualItem col-md-3" ng-repeat="item in combo">
+					<img src="{{item.image}}" alt="{{item.name}}" class="img-rounded provider-img" width="70%"><br/>
+					<span class="desc price">{{item.price | currency : symbol}}</span>
+					<span class="desc name">{{item.name}}</span>
+				</div>
+			</div>
+			<div class="totPrice col-md-1">{{123123}}</div>
+		</div>
+	</div>
 </div>

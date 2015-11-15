@@ -9,12 +9,77 @@ body{
 }
 
 #logo{
-	font-family: myriad-pro,"Helvetica Neue",Helvetica,Arial,sans-serif;
-	font-size:20px;
-	font-weight: 600;
-	color:white;
-	letter-spacing: 0.7px;
 	line-height: 55px;
     height: 55px;
     padding-top: 0;
+    position: relative;
+    top:-8px;
+}
+
+/***** RESULTS ********/
+#combinations{
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+.clabel{
+	font-size:25px;
+}
+
+.itemList{
+	font-size: 16px;
+}
+
+.breadcrumb{
+	background-color: #e5f6ff;
+}
+
+.row{
+	text-align: center;
+	margin-bottom: 20px;
+	background-color: #b3e2ff;
+	padding:5px;
+	border-radius: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.number{
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 24px;
+	color: grey;
+	margin-top: 87px;
+}
+
+.individualItem{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.desc{
+	width:70%;
+	display: block;
+	margin-top: 7px;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size:20px;
+	font-weight: bold;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.name{
+	text-align: center;
+	font-weight: bold;
+	font-size:20px;
+}
+
+.price{
+	text-align: left;
+	color: #007dc6;
+}
+
+.totPrice{
+	margin-top: 87px;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 24px;
+	color: black;
 }
