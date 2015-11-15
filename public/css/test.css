@@ -1,0 +1,54 @@
+*
+{
+    margin:0;padding:0;
+}
+html,body,.container
+{
+    height:100%;
+}
+.container
+{
+    display:table;
+    width: 100%;
+    margin-top: -70px;
+    padding-top: 70px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#header{
+    background-color: #007dc6;
+    border-radius: 0;
+    height: 70px;
+    margin: 0;
+    border: none;
+}
+
+#logo{
+    line-height: 55px;
+    height: 55px;
+    padding-top: 0;
+    position: relative;
+    top:-8px;
+}
+
+.row
+{
+    height: 100%;
+    display: table-row;
+}
+.col-md-3.no-float, .col-md-9.no-float {
+    float: none; /* thanks baxabbit */
+}
+.col-md-3
+{
+    display: table-cell;
+    background: pink;
+    width: 25%;
+}
+.col-md-9
+{
+    display: table-cell;
+    background: yellow;
+    width: 75%;
+}

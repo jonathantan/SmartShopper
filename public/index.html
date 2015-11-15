@@ -33,7 +33,7 @@
 	<script src="js/appRoutes.js"></script>
 	<script src="js/app.js"></script>
 </head>
-<body ng-app="smartShopperApp" ng-controller="MainController">
+<body ng-app="smartShopperApp" ng-controller="MainController as ctrl">
 	<div class="page-container">
   
 	<!-- top navbar -->
@@ -116,7 +116,15 @@
 					<li class="itemList" ng-repeat="item in myItems">{{item}}</li>
 				</ol>
 
-				{{combos}}
+				<div ng-repeat="combo in combos">
+					<div class="row">
+						<div class="col-md-1 col-md-offset-11 number">
+							<span>
+								{{$index + 1}}
+							</span>
+						</div>
+					</div>
+				</div>
 				<!-- <div class="resultList vertical" ng-repeat="combo in combos">
 					<div class="row">
 						<div class="col-md-1 col-md-offset-11 number">

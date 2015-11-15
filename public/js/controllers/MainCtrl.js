@@ -6,6 +6,12 @@ angular.module('MainCtrl', []).controller('MainController', ['$scope', '$window'
 
 	$scope.combos = $window.globalVar;
 
+	setTimeout(function () {
+        $scope.$apply(function () {
+            $scope.combos = $window.globalVar;
+        });
+    }, 1000);
+
 	// Window.mycallback = function(data){
 	// 		console.log(data);
 	// 		$rootScope.combos = data;
