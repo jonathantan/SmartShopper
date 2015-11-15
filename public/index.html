@@ -116,14 +116,15 @@
 					<li class="itemList" ng-repeat="item in myItems">{{item}}</li>
 				</ol>
 
-				<div class="resultList vertical" ng-repeat="combo in combos">
+				{{combos}}
+				<!-- <div class="resultList vertical" ng-repeat="combo in combos">
 					<div class="row">
 						<div class="col-md-1 col-md-offset-11 number">
 							<span>
 								{{$index + 1}}
 							</span>
 						</div>
-						<!-- <div class="col-md-9 col-md-offset-1">
+						<div class="col-md-9 col-md-offset-1">
 							<div class="individualItem col-md-3" ng-repeat="item in combo">
 								<img src="{{item.image}}" alt="{{item.name}}" class="img-rounded provider-img" width="70%"><br/>
 								<span class="desc price">{{item.price | currency : symbol}}</span>
